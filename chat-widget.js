@@ -1,4 +1,4 @@
-i// Chat Widget Script
+// Chat Widget Script
 (function() {
     // Create and inject styles
     const styles = `
