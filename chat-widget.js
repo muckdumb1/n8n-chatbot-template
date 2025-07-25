@@ -1,4 +1,4 @@
-// Chat Widget Script
+i// Chat Widget Script
 (function() {
     // Create and inject styles
     const styles = `
@@ -297,7 +297,7 @@
             responseTimeText: '',
             poweredBy: {
                 text: 'Powered by Zenli.ai',
-                link: 'https://n8n.partnerlinks.io/m8a94i19zhqq?utm_source=nocodecreative.io'
+                link: 'https://Zenli.ai'
             }
         },
         style: {
