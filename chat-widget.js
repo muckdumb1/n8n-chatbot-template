@@ -323,6 +323,13 @@
 
     let currentSessionId = '';
 
+    // Show default welcome message from Sandy
+const botMessageDiv = document.createElement('div');
+botMessageDiv.className = 'chat-message bot';
+botMessageDiv.textContent = "Hi, I'm Sandy from Zenli.ai, how may I help you today?";
+messagesContainer.appendChild(botMessageDiv);
+messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
     // Create widget container
     const widgetContainer = document.createElement('div');
     widgetContainer.className = 'n8n-chat-widget';
