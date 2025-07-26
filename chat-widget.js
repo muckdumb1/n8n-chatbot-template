@@ -420,6 +420,13 @@
             chatContainer.querySelector('.new-conversation').style.display = 'none';
             chatInterface.classList.add('active');
 
+            // Inject default welcome message from Sandy
+const welcomeDiv = document.createElement('div');
+welcomeDiv.className = 'chat-message bot';
+welcomeDiv.textContent = "Hi, I'm Sandy from Zenli.ai, how may I help you today?";
+messagesContainer.appendChild(welcomeDiv);
+messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
             botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
