@@ -416,22 +416,23 @@
             });
 
             const responseData = await response.json();
-            chatContainer.querySelector('.brand-header').style.display = 'none';
-            chatContainer.querySelector('.new-conversation').style.display = 'none';
-            chatInterface.classList.add('active');
+          chatContainer.querySelector('.brand-header').style.display = 'none';
+chatContainer.querySelector('.new-conversation').style.display = 'none';
+chatInterface.classList.add('active');
 
-            // Inject default welcome message from Sandy
+// Inject default welcome message from Sandy
 const welcomeDiv = document.createElement('div');
 welcomeDiv.className = 'chat-message bot';
 welcomeDiv.textContent = "Hi, I'm Sandy from Zenli.ai, how may I help you today?";
 messagesContainer.appendChild(welcomeDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-            const botMessageDiv = document.createElement('div');
-            botMessageDiv.className = 'chat-message bot';
-            botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
-            messagesContainer.appendChild(botMessageDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+// Optionally append response from webhook if available
+const botMessageDiv = document.createElement('div');
+botMessageDiv.className = 'chat-message bot';
+botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
+messagesContainer.appendChild(botMessageDiv);
+messagesContainer.scrollTop = messagesContainer.scrollHeight;
         } catch (error) {
             console.error('Error:', error);
         }
