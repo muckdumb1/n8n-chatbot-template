@@ -11,10 +11,10 @@
         }
 
         .n8n-chat-widget .chat-container {
-            position: fixed !important;
-            bottom: 20px !important;
-            right: 20px !important;
-            z-index: 1000 !important;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
             display: none;
             width: 380px;
             height: 600px;
@@ -219,9 +219,9 @@
         }
 
         .n8n-chat-widget .chat-toggle {
-            position: fixed !important;
-            bottom: 20px !important;
-            right: 20px !important;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             width: 60px;
             height: 60px;
             border-radius: 30px;
@@ -230,7 +230,7 @@
             border: none;
             cursor: pointer;
             box-shadow: 0 4px 12px rgba(133, 79, 255, 0.3);
-            z-index: 999 !important;
+            z-index: 999;
             transition: transform 0.3s;
             display: flex;
             align-items: center;
